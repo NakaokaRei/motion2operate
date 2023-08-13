@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:motion2operate-iOS/motion2operate-iOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:motion2operate-mac/motion2operate-mac.xcodeproj">
+   </FileRef>
+</Workspace>
