@@ -6,14 +6,22 @@
 //
 
 import SwiftUI
+import motion2operate_shared
 
 struct ContentView: View {
+
+    @State var number = 0
+    var multiPeerClient = MultipeerClient()
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button("From iOS") {
+                multiPeerClient.send(message: "From iOS \(number)")
+                number += 1
+            }
         }
         .padding()
     }

@@ -11,6 +11,8 @@
 		234E69692A891CF8003D21BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E69682A891CF8003D21BF /* ContentView.swift */; };
 		234E696B2A891CFA003D21BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234E696A2A891CFA003D21BF /* Assets.xcassets */; };
 		234E696E2A891CFA003D21BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234E696D2A891CFA003D21BF /* Preview Assets.xcassets */; };
+		23EE39792A8922FC0080E996 /* M2OViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE39782A8922FC0080E996 /* M2OViewModel.swift */; };
+		23EE397D2A8924540080E996 /* motion2operate-shared in Frameworks */ = {isa = PBXBuildFile; productRef = 23EE397C2A8924540080E996 /* motion2operate-shared */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,7 @@
 		234E696A2A891CFA003D21BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		234E696D2A891CFA003D21BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		234E696F2A891CFA003D21BF /* motion2operate_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = motion2operate_mac.entitlements; sourceTree = "<group>"; };
+		23EE39782A8922FC0080E996 /* M2OViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M2OViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23EE397D2A8924540080E996 /* motion2operate-shared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +42,7 @@
 			children = (
 				234E69652A891CF8003D21BF /* motion2operate-mac */,
 				234E69642A891CF8003D21BF /* Products */,
+				23EE39712A8921920080E996 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +62,7 @@
 				234E696A2A891CFA003D21BF /* Assets.xcassets */,
 				234E696F2A891CFA003D21BF /* motion2operate_mac.entitlements */,
 				234E696C2A891CFA003D21BF /* Preview Content */,
+				23EE39782A8922FC0080E996 /* M2OViewModel.swift */,
 			);
 			path = "motion2operate-mac";
 			sourceTree = "<group>";
@@ -67,6 +73,13 @@
 				234E696D2A891CFA003D21BF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23EE39712A8921920080E996 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +98,9 @@
 			dependencies = (
 			);
 			name = "motion2operate-mac";
+			packageProductDependencies = (
+				23EE397C2A8924540080E996 /* motion2operate-shared */,
+			);
 			productName = "motion2operate-mac";
 			productReference = 234E69632A891CF8003D21BF /* motion2operate-mac.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +157,7 @@
 			files = (
 				234E69692A891CF8003D21BF /* ContentView.swift in Sources */,
 				234E69672A891CF8003D21BF /* motion2operate_macApp.swift in Sources */,
+				23EE39792A8922FC0080E996 /* M2OViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +292,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "iOSとの通信に使います";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -302,6 +320,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "iOSとの通信に使います";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -336,6 +355,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23EE397C2A8924540080E996 /* motion2operate-shared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "motion2operate-shared";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 234E695B2A891CF8003D21BF /* Project object */;
 }

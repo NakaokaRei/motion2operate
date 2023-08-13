@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:motion2operate-shared">
+   </FileRef>
+   <FileRef
       location = "group:motion2operate-iOS/motion2operate-iOS.xcodeproj">
    </FileRef>
    <FileRef
