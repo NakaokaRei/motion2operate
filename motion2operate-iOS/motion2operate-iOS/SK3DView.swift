@@ -11,8 +11,10 @@ import motion2operate_shared
 import CoreMotion
 
 struct SK3DView: UIViewRepresentable {
+
     @State private var cubeNode: SCNNode = .init()
     @Binding var operateMode: Bool
+
     var cmManger: CoreMotionManager
     var multiPeerClient: MultipeerClient
 
