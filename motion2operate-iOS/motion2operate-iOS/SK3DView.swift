@@ -58,7 +58,7 @@ struct SK3DView: UIViewRepresentable {
         let sensitivity: Double = 50.0 // この値を調整して、マウスの移動の感度を変更
 
         // ピッチとロールからマウスの移動量を計算
-        let dx = motion.attitude.roll * sensitivity
+        let dx = motion.attitude.roll * sensitivity * 2
         let dy = motion.attitude.pitch * sensitivity
 
         // マウスを移動
