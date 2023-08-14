@@ -52,14 +52,14 @@ struct SK3DView: UIViewRepresentable {
     }
 
     func updateMousePosition(using motion: CMDeviceMotion) {
-        let sensitivity: Double = 30.0 // この値を調整して、マウスの移動の感度を変更
+        let sensitivity: Double = 50.0 // この値を調整して、マウスの移動の感度を変更
 
         // ピッチとロールからマウスの移動量を計算
         let dx = motion.attitude.roll * sensitivity
         let dy = motion.attitude.pitch * sensitivity
 
         // マウスを移動
-        multiPeerClient.send(message: "From iOS \(dx) \(dy)")
+        multiPeerClient.send(message: "moveMouse \(dx) \(dy)")
     }
 
     func sceneSetUp(scnView: SCNView) {

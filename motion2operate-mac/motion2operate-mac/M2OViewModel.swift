@@ -20,7 +20,7 @@ class M2OViewModel: ObservableObject {
     }
 
     func extractDXDY(from string: String) -> (dx: Double, dy: Double)? {
-        let pattern = "From iOS ([-+]?(?:\\d*\\.\\d+|\\d+)) ([-+]?(?:\\d*\\.\\d+|\\d+))"
+        let pattern = "moveMouse ([-+]?(?:\\d*\\.\\d+|\\d+)) ([-+]?(?:\\d*\\.\\d+|\\d+))"
         let regex = try! NSRegularExpression(pattern: pattern, options: [])
 
         if let match = regex.firstMatch(in: string, options: [], range: NSRange(location: 0, length: string.utf16.count)) {
