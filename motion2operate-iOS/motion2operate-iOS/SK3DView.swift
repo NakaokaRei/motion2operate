@@ -12,6 +12,7 @@ import CoreMotion
 
 struct SK3DView: UIViewRepresentable {
     @State private var cubeNode: SCNNode = .init()
+    @Binding var operateMode: Bool
     var cmManger: CoreMotionManager
     var multiPeerClient: MultipeerClient
 
@@ -47,8 +48,10 @@ struct SK3DView: UIViewRepresentable {
 
     func nodeRotate(_ motion: CMDeviceMotion) {
         let data = motion.attitude
-        updateMousePosition(using: motion)
         cubeNode.eulerAngles = SCNVector3(-data.pitch, -data.yaw, -data.roll)
+        if operateMode {
+            updateMousePosition(using: motion)
+        }
     }
 
     func updateMousePosition(using motion: CMDeviceMotion) {
