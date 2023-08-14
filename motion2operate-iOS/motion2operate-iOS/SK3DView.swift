@@ -11,7 +11,7 @@ import CoreMotion
 
 struct SK3DView: UIViewRepresentable {
     @State private var cubeNode: SCNNode = .init()
-    private var cmManger = CoreMotionManager()
+    var cmManger: CoreMotionManager
 
     func makeUIView(context: Context) -> SCNView {
         let scnView = SCNView()
