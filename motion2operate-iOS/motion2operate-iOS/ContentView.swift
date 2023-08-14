@@ -16,16 +16,12 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            SK3DView(cmManger: cmManager)
+            SK3DView(cmManger: cmManager, multiPeerClient: multiPeerClient)
                 .overlay(alignment: .top) {
                     Button("Recalibrate") {
                         cmManager.setReferenceAttitude()
                     }
                 }
-            Button("From iOS") {
-                multiPeerClient.send(message: "From iOS \(number)")
-                number += 1
-            }
         }
         .padding()
     }

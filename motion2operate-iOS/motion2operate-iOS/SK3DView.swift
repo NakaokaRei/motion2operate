@@ -7,11 +7,13 @@
 
 import SwiftUI
 import SceneKit
+import motion2operate_shared
 import CoreMotion
 
 struct SK3DView: UIViewRepresentable {
     @State private var cubeNode: SCNNode = .init()
     var cmManger: CoreMotionManager
+    var multiPeerClient: MultipeerClient
 
     func makeUIView(context: Context) -> SCNView {
         let scnView = SCNView()
@@ -45,7 +47,19 @@ struct SK3DView: UIViewRepresentable {
 
     func nodeRotate(_ motion: CMDeviceMotion) {
         let data = motion.attitude
+        updateMousePosition(using: motion)
         cubeNode.eulerAngles = SCNVector3(-data.pitch, -data.yaw, -data.roll)
+    }
+
+    func updateMousePosition(using motion: CMDeviceMotion) {
+        let sensitivity: Double = 30.0 // この値を調整して、マウスの移動の感度を変更
+
+        // ピッチとロールからマウスの移動量を計算
+        let dx = motion.attitude.roll * sensitivity
+        let dy = motion.attitude.pitch * sensitivity
+
+        // マウスを移動
+        multiPeerClient.send(message: "From iOS \(dx) \(dy)")
     }
 
     func sceneSetUp(scnView: SCNView) {
