@@ -11,6 +11,8 @@
 		234E69842A891D31003D21BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E69832A891D31003D21BF /* ContentView.swift */; };
 		234E69862A891D32003D21BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234E69852A891D32003D21BF /* Assets.xcassets */; };
 		234E69892A891D32003D21BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234E69882A891D32003D21BF /* Preview Assets.xcassets */; };
+		23914E4B2A89C18200CFF263 /* CoreMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23914E4A2A89C18200CFF263 /* CoreMotionManager.swift */; };
+		23914E4D2A89CD4F00CFF263 /* SK3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23914E4C2A89CD4F00CFF263 /* SK3DView.swift */; };
 		23EE397B2A8924460080E996 /* motion2operate-shared in Frameworks */ = {isa = PBXBuildFile; productRef = 23EE397A2A8924460080E996 /* motion2operate-shared */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +23,8 @@
 		234E69852A891D32003D21BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		234E69882A891D32003D21BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		23914E452A89258F00CFF263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		23914E4A2A89C18200CFF263 /* CoreMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionManager.swift; sourceTree = "<group>"; };
+		23914E4C2A89CD4F00CFF263 /* SK3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SK3DView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				234E69832A891D31003D21BF /* ContentView.swift */,
 				234E69852A891D32003D21BF /* Assets.xcassets */,
 				234E69872A891D32003D21BF /* Preview Content */,
+				23914E4A2A89C18200CFF263 /* CoreMotionManager.swift */,
+				23914E4C2A89CD4F00CFF263 /* SK3DView.swift */,
 			);
 			path = "motion2operate-iOS";
 			sourceTree = "<group>";
@@ -153,6 +159,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				234E69842A891D31003D21BF /* ContentView.swift in Sources */,
+				23914E4D2A89CD4F00CFF263 /* SK3DView.swift in Sources */,
+				23914E4B2A89C18200CFF263 /* CoreMotionManager.swift in Sources */,
 				234E69822A891D31003D21BF /* motion2operate_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +295,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "motion2operate-iOS/Info.plist";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "macとの通信に使います";
+				INFOPLIST_KEY_NSMotionUsageDescription = "AIrPods Proのセンサを使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -318,6 +327,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "motion2operate-iOS/Info.plist";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "macとの通信に使います";
+				INFOPLIST_KEY_NSMotionUsageDescription = "AIrPods Proのセンサを使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
