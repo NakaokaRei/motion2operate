@@ -53,6 +53,8 @@ struct SK3DView: UIViewRepresentable {
         cubeNode.eulerAngles = SCNVector3(-data.pitch, -data.yaw, -data.roll)
         if operateMode {
             updateMousePosition(using: motion)
+        } else {
+            computeShortcut(using: motion)
         }
     }
 
@@ -65,6 +67,16 @@ struct SK3DView: UIViewRepresentable {
 
         // マウスを移動
         multiPeerClient.send(message: "moveMouse \(dx) \(dy)")
+    }
+
+    func computeShortcut(using motion: CMDeviceMotion) {
+        let yawThreshold: Double = .pi / 6
+
+        if motion.attitude.yaw > yawThreshold {
+            multiPeerClient.send(message: "turn left")
+        } else if motion.attitude.yaw < -yawThreshold {
+            multiPeerClient.send(message: "turn right")
+        }
     }
 
     func sceneSetUp(scnView: SCNView) {

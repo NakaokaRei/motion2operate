@@ -46,6 +46,10 @@ extension M2OViewModel: MulitipeerProtocol {
         self.message = message
         if let (dx, dy) = extractDXDY(from: message) {
             SwiftAutoGUI.moveMouse(dx: -dx, dy: -dy)
+        } else if message == "turn left" {
+            SwiftAutoGUI.sendKeyShortcut([.control, .leftArrow])
+        } else if message == "turn right" {
+            SwiftAutoGUI.sendKeyShortcut([.control, .rightArrow])
         }
     }
 
