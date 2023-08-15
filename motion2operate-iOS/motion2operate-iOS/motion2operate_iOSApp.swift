@@ -11,7 +11,7 @@ import SwiftUI
 struct motion2operate_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
     }
 }

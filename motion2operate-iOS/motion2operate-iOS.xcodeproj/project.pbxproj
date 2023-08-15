@@ -8,23 +8,65 @@
 
 /* Begin PBXBuildFile section */
 		234E69822A891D31003D21BF /* motion2operate_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E69812A891D31003D21BF /* motion2operate_iOSApp.swift */; };
-		234E69842A891D31003D21BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E69832A891D31003D21BF /* ContentView.swift */; };
+		234E69842A891D31003D21BF /* AirPodsProDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E69832A891D31003D21BF /* AirPodsProDemoView.swift */; };
 		234E69862A891D32003D21BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234E69852A891D32003D21BF /* Assets.xcassets */; };
 		234E69892A891D32003D21BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234E69882A891D32003D21BF /* Preview Assets.xcassets */; };
 		23914E4B2A89C18200CFF263 /* CoreMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23914E4A2A89C18200CFF263 /* CoreMotionManager.swift */; };
 		23914E4D2A89CD4F00CFF263 /* SK3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23914E4C2A89CD4F00CFF263 /* SK3DView.swift */; };
+		23BC71872A8B90D2000BBC3E /* WatchDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC71862A8B90D2000BBC3E /* WatchDemoViewModel.swift */; };
+		23BC71892A8B9C4B000BBC3E /* WatchControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC71882A8B9C4B000BBC3E /* WatchControllerView.swift */; };
+		23BC718B2A8B9C67000BBC3E /* WatchControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC718A2A8B9C67000BBC3E /* WatchControllerViewModel.swift */; };
 		23EE397B2A8924460080E996 /* motion2operate-shared in Frameworks */ = {isa = PBXBuildFile; productRef = 23EE397A2A8924460080E996 /* motion2operate-shared */; };
+		23F0C7272A8B85C000C2A4D4 /* motion2operate_watchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F0C7262A8B85C000C2A4D4 /* motion2operate_watchApp.swift */; };
+		23F0C72B2A8B85C500C2A4D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F0C72A2A8B85C500C2A4D4 /* Assets.xcassets */; };
+		23F0C72E2A8B85C500C2A4D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F0C72D2A8B85C500C2A4D4 /* Preview Assets.xcassets */; };
+		23F0C7312A8B85C500C2A4D4 /* motion2operate-watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 23F0C7242A8B85C000C2A4D4 /* motion2operate-watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		23F0C7372A8B883900C2A4D4 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F0C7362A8B883900C2A4D4 /* RootView.swift */; };
+		23F0C7392A8B885D00C2A4D4 /* WatchDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F0C7382A8B885D00C2A4D4 /* WatchDemoView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23F0C72F2A8B85C500C2A4D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 234E69762A891D31003D21BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23F0C7232A8B85C000C2A4D4;
+			remoteInfo = "motion2operate-watch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23F0C7322A8B85C500C2A4D4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				23F0C7312A8B85C500C2A4D4 /* motion2operate-watch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		234E697E2A891D31003D21BF /* motion2operate-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "motion2operate-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		234E69812A891D31003D21BF /* motion2operate_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motion2operate_iOSApp.swift; sourceTree = "<group>"; };
-		234E69832A891D31003D21BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		234E69832A891D31003D21BF /* AirPodsProDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPodsProDemoView.swift; sourceTree = "<group>"; };
 		234E69852A891D32003D21BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		234E69882A891D32003D21BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		23914E452A89258F00CFF263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		23914E4A2A89C18200CFF263 /* CoreMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionManager.swift; sourceTree = "<group>"; };
 		23914E4C2A89CD4F00CFF263 /* SK3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SK3DView.swift; sourceTree = "<group>"; };
+		23BC71862A8B90D2000BBC3E /* WatchDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDemoViewModel.swift; sourceTree = "<group>"; };
+		23BC71882A8B9C4B000BBC3E /* WatchControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchControllerView.swift; sourceTree = "<group>"; };
+		23BC718A2A8B9C67000BBC3E /* WatchControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchControllerViewModel.swift; sourceTree = "<group>"; };
+		23F0C7242A8B85C000C2A4D4 /* motion2operate-watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "motion2operate-watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F0C7262A8B85C000C2A4D4 /* motion2operate_watchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motion2operate_watchApp.swift; sourceTree = "<group>"; };
+		23F0C72A2A8B85C500C2A4D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23F0C72D2A8B85C500C2A4D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23F0C7362A8B883900C2A4D4 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		23F0C7382A8B885D00C2A4D4 /* WatchDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +78,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23F0C7212A8B85C000C2A4D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -43,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				234E69802A891D31003D21BF /* motion2operate-iOS */,
+				23F0C7252A8B85C000C2A4D4 /* motion2operate-watch Watch App */,
 				234E697F2A891D31003D21BF /* Products */,
 				23EE396E2A8921880080E996 /* Frameworks */,
 			);
@@ -52,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				234E697E2A891D31003D21BF /* motion2operate-iOS.app */,
+				23F0C7242A8B85C000C2A4D4 /* motion2operate-watch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,13 +110,12 @@
 		234E69802A891D31003D21BF /* motion2operate-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				23914E452A89258F00CFF263 /* Info.plist */,
-				234E69812A891D31003D21BF /* motion2operate_iOSApp.swift */,
-				234E69832A891D31003D21BF /* ContentView.swift */,
-				234E69852A891D32003D21BF /* Assets.xcassets */,
-				234E69872A891D32003D21BF /* Preview Content */,
+				23F0C73A2A8B8A9000C2A4D4 /* View */,
 				23914E4A2A89C18200CFF263 /* CoreMotionManager.swift */,
-				23914E4C2A89CD4F00CFF263 /* SK3DView.swift */,
+				234E69812A891D31003D21BF /* motion2operate_iOSApp.swift */,
+				234E69852A891D32003D21BF /* Assets.xcassets */,
+				23914E452A89258F00CFF263 /* Info.plist */,
+				234E69872A891D32003D21BF /* Preview Content */,
 			);
 			path = "motion2operate-iOS";
 			sourceTree = "<group>";
@@ -85,6 +135,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		23F0C7252A8B85C000C2A4D4 /* motion2operate-watch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				23F0C7262A8B85C000C2A4D4 /* motion2operate_watchApp.swift */,
+				23BC71882A8B9C4B000BBC3E /* WatchControllerView.swift */,
+				23BC718A2A8B9C67000BBC3E /* WatchControllerViewModel.swift */,
+				23F0C72A2A8B85C500C2A4D4 /* Assets.xcassets */,
+				23F0C72C2A8B85C500C2A4D4 /* Preview Content */,
+			);
+			path = "motion2operate-watch Watch App";
+			sourceTree = "<group>";
+		};
+		23F0C72C2A8B85C500C2A4D4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				23F0C72D2A8B85C500C2A4D4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23F0C73A2A8B8A9000C2A4D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23914E4C2A89CD4F00CFF263 /* SK3DView.swift */,
+				234E69832A891D31003D21BF /* AirPodsProDemoView.swift */,
+				23F0C7382A8B885D00C2A4D4 /* WatchDemoView.swift */,
+				23BC71862A8B90D2000BBC3E /* WatchDemoViewModel.swift */,
+				23F0C7362A8B883900C2A4D4 /* RootView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,10 +177,12 @@
 				234E697A2A891D31003D21BF /* Sources */,
 				234E697B2A891D31003D21BF /* Frameworks */,
 				234E697C2A891D31003D21BF /* Resources */,
+				23F0C7322A8B85C500C2A4D4 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				23F0C7302A8B85C500C2A4D4 /* PBXTargetDependency */,
 			);
 			name = "motion2operate-iOS";
 			packageProductDependencies = (
@@ -106,6 +190,23 @@
 			);
 			productName = "motion2operate-iOS";
 			productReference = 234E697E2A891D31003D21BF /* motion2operate-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23F0C7232A8B85C000C2A4D4 /* motion2operate-watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23F0C7352A8B85C500C2A4D4 /* Build configuration list for PBXNativeTarget "motion2operate-watch Watch App" */;
+			buildPhases = (
+				23F0C7202A8B85C000C2A4D4 /* Sources */,
+				23F0C7212A8B85C000C2A4D4 /* Frameworks */,
+				23F0C7222A8B85C000C2A4D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "motion2operate-watch Watch App";
+			productName = "motion2operate-watch Watch App";
+			productReference = 23F0C7242A8B85C000C2A4D4 /* motion2operate-watch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,6 +220,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					234E697D2A891D31003D21BF = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					23F0C7232A8B85C000C2A4D4 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
@@ -137,6 +241,7 @@
 			projectRoot = "";
 			targets = (
 				234E697D2A891D31003D21BF /* motion2operate-iOS */,
+				23F0C7232A8B85C000C2A4D4 /* motion2operate-watch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +256,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23F0C7222A8B85C000C2A4D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F0C72E2A8B85C500C2A4D4 /* Preview Assets.xcassets in Resources */,
+				23F0C72B2A8B85C500C2A4D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -158,14 +272,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				234E69842A891D31003D21BF /* ContentView.swift in Sources */,
+				234E69842A891D31003D21BF /* AirPodsProDemoView.swift in Sources */,
+				23F0C7392A8B885D00C2A4D4 /* WatchDemoView.swift in Sources */,
 				23914E4D2A89CD4F00CFF263 /* SK3DView.swift in Sources */,
 				23914E4B2A89C18200CFF263 /* CoreMotionManager.swift in Sources */,
+				23BC71872A8B90D2000BBC3E /* WatchDemoViewModel.swift in Sources */,
 				234E69822A891D31003D21BF /* motion2operate_iOSApp.swift in Sources */,
+				23F0C7372A8B883900C2A4D4 /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F0C7202A8B85C000C2A4D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23BC718B2A8B9C67000BBC3E /* WatchControllerViewModel.swift in Sources */,
+				23F0C7272A8B85C000C2A4D4 /* motion2operate_watchApp.swift in Sources */,
+				23BC71892A8B9C4B000BBC3E /* WatchControllerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23F0C7302A8B85C500C2A4D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23F0C7232A8B85C000C2A4D4 /* motion2operate-watch Watch App */;
+			targetProxy = 23F0C72F2A8B85C500C2A4D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		234E698A2A891D32003D21BF /* Debug */ = {
@@ -285,6 +420,7 @@
 		234E698D2A891D32003D21BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -317,6 +453,7 @@
 		234E698E2A891D32003D21BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -346,6 +483,66 @@
 			};
 			name = Release;
 		};
+		23F0C7332A8B85C500C2A4D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"motion2operate-watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = YX6B69FS7M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "motion2operate-watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.n.rei.motion2operate-iOS";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.n.rei.motion2operate-iOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		23F0C7342A8B85C500C2A4D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"motion2operate-watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = YX6B69FS7M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "motion2operate-watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.n.rei.motion2operate-iOS";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.n.rei.motion2operate-iOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -363,6 +560,15 @@
 			buildConfigurations = (
 				234E698D2A891D32003D21BF /* Debug */,
 				234E698E2A891D32003D21BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23F0C7352A8B85C500C2A4D4 /* Build configuration list for PBXNativeTarget "motion2operate-watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F0C7332A8B85C500C2A4D4 /* Debug */,
+				23F0C7342A8B85C500C2A4D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
