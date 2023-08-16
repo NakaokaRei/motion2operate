@@ -71,7 +71,7 @@ extension WatchDemoViewModel: WCSessionDelegate {
         // send to mac app
         if let message = message["message"] as? String {
             self.message = message
-            multiPeerClient.send(message: message)
+            multiPeerClient.send(message: "turn left")
         } else if let attitude = extractAttitude(from: message["attitude"] as! String) {
             DispatchQueue.main.async {
                 self.attitude = attitude

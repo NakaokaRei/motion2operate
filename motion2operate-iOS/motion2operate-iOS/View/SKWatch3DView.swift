@@ -50,7 +50,7 @@ struct SKWatch3DView: UIViewRepresentable {
     func nodeRotate(_ attitude: WatchAttitude) {
         // Apple Watchの向きに合わせて回転値を調整
         watchNode.eulerAngles = SCNVector3(-attitude.roll, attitude.yaw, -attitude.pitch)
-        updateMousePosition(using: attitude)
+//        updateMousePosition(using: attitude)
     }
 
     func updateMousePosition(using attitude: WatchAttitude) {
