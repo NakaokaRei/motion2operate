@@ -17,7 +17,7 @@ struct AirPodsProDemoView: View {
 
     var body: some View {
         VStack {
-            SK3DView(operateMode: $operateMode, cmManger: cmManager, multiPeerClient: multiPeerClient)
+            SKHead3DView(operateMode: $operateMode, cmManger: cmManager, multiPeerClient: multiPeerClient)
                 .overlay(alignment: .top) {
                     Button("Recalibrate") {
                         cmManager.setReferenceAttitude()

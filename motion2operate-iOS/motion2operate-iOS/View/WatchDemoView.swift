@@ -12,7 +12,10 @@ struct WatchDemoView: View {
     @StateObject var viewModel: WatchDemoViewModel
 
     var body: some View {
-        Text(viewModel.message)
+        VStack {
+            SKWatch3DView(attitude: $viewModel.attitude, multiPeerClient: viewModel.multiPeerClient)
+            Text(viewModel.message)
+        }
     }
 }
 

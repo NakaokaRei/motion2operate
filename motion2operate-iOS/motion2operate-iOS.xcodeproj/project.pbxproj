@@ -12,7 +12,8 @@
 		234E69862A891D32003D21BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234E69852A891D32003D21BF /* Assets.xcassets */; };
 		234E69892A891D32003D21BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234E69882A891D32003D21BF /* Preview Assets.xcassets */; };
 		23914E4B2A89C18200CFF263 /* CoreMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23914E4A2A89C18200CFF263 /* CoreMotionManager.swift */; };
-		23914E4D2A89CD4F00CFF263 /* SK3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23914E4C2A89CD4F00CFF263 /* SK3DView.swift */; };
+		23914E4D2A89CD4F00CFF263 /* SKHead3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23914E4C2A89CD4F00CFF263 /* SKHead3DView.swift */; };
+		23A721AC2A8C980A0082207D /* SKWatch3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A721AB2A8C980A0082207D /* SKWatch3DView.swift */; };
 		23BC71872A8B90D2000BBC3E /* WatchDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC71862A8B90D2000BBC3E /* WatchDemoViewModel.swift */; };
 		23BC71892A8B9C4B000BBC3E /* WatchControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC71882A8B9C4B000BBC3E /* WatchControllerView.swift */; };
 		23BC718B2A8B9C67000BBC3E /* WatchControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC718A2A8B9C67000BBC3E /* WatchControllerViewModel.swift */; };
@@ -57,7 +58,8 @@
 		234E69882A891D32003D21BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		23914E452A89258F00CFF263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		23914E4A2A89C18200CFF263 /* CoreMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionManager.swift; sourceTree = "<group>"; };
-		23914E4C2A89CD4F00CFF263 /* SK3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SK3DView.swift; sourceTree = "<group>"; };
+		23914E4C2A89CD4F00CFF263 /* SKHead3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKHead3DView.swift; sourceTree = "<group>"; };
+		23A721AB2A8C980A0082207D /* SKWatch3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKWatch3DView.swift; sourceTree = "<group>"; };
 		23BC71862A8B90D2000BBC3E /* WatchDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDemoViewModel.swift; sourceTree = "<group>"; };
 		23BC71882A8B9C4B000BBC3E /* WatchControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchControllerView.swift; sourceTree = "<group>"; };
 		23BC718A2A8B9C67000BBC3E /* WatchControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchControllerViewModel.swift; sourceTree = "<group>"; };
@@ -158,7 +160,8 @@
 		23F0C73A2A8B8A9000C2A4D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				23914E4C2A89CD4F00CFF263 /* SK3DView.swift */,
+				23914E4C2A89CD4F00CFF263 /* SKHead3DView.swift */,
+				23A721AB2A8C980A0082207D /* SKWatch3DView.swift */,
 				234E69832A891D31003D21BF /* AirPodsProDemoView.swift */,
 				23F0C7382A8B885D00C2A4D4 /* WatchDemoView.swift */,
 				23BC71862A8B90D2000BBC3E /* WatchDemoViewModel.swift */,
@@ -274,9 +277,10 @@
 			files = (
 				234E69842A891D31003D21BF /* AirPodsProDemoView.swift in Sources */,
 				23F0C7392A8B885D00C2A4D4 /* WatchDemoView.swift in Sources */,
-				23914E4D2A89CD4F00CFF263 /* SK3DView.swift in Sources */,
+				23914E4D2A89CD4F00CFF263 /* SKHead3DView.swift in Sources */,
 				23914E4B2A89C18200CFF263 /* CoreMotionManager.swift in Sources */,
 				23BC71872A8B90D2000BBC3E /* WatchDemoViewModel.swift in Sources */,
+				23A721AC2A8C980A0082207D /* SKWatch3DView.swift in Sources */,
 				234E69822A891D31003D21BF /* motion2operate_iOSApp.swift in Sources */,
 				23F0C7372A8B883900C2A4D4 /* RootView.swift in Sources */,
 			);

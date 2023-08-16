@@ -10,7 +10,7 @@ import SceneKit
 import motion2operate_shared
 import CoreMotion
 
-struct SK3DView: UIViewRepresentable {
+struct SKHead3DView: UIViewRepresentable {
 
     @State private var cubeNode: SCNNode = .init()
     @Binding var operateMode: Bool
@@ -40,9 +40,9 @@ struct SK3DView: UIViewRepresentable {
     }
 
     class Coordinator {
-        var parent: SK3DView
+        var parent: SKHead3DView
 
-        init(_ parent: SK3DView) {
+        init(_ parent: SKHead3DView) {
             self.parent = parent
         }
 

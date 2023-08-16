@@ -14,15 +14,15 @@ struct WatchControllerView: View {
 
 
     var body: some View {
-        Button("send to iOS to Mac") {
-            viewModel.send(message: "from Watch \(number)")
-            number += 1
+        VStack {
+            Button("send to iOS to Mac") {
+                viewModel.send(message: "from Watch \(number)")
+                number += 1
+            }
+            Button("set reference") {
+                viewModel.setReferenceAttitude()
+            }
         }
     }
 }
 
-struct WatchControllerView_Previews: PreviewProvider {
-    static var previews: some View {
-        WatchControllerView()
-    }
-}
