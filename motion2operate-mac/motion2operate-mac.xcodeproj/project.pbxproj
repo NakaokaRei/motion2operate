@@ -12,6 +12,7 @@
 		234E696B2A891CFA003D21BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234E696A2A891CFA003D21BF /* Assets.xcassets */; };
 		234E696E2A891CFA003D21BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234E696D2A891CFA003D21BF /* Preview Assets.xcassets */; };
 		23914E482A8928AF00CFF263 /* SwiftAutoGUI in Frameworks */ = {isa = PBXBuildFile; productRef = 23914E472A8928AF00CFF263 /* SwiftAutoGUI */; };
+		23BC14CA2A8F9A51001B6CDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC14C92A8F9A51001B6CDD /* AppDelegate.swift */; };
 		23EE39792A8922FC0080E996 /* M2OViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE39782A8922FC0080E996 /* M2OViewModel.swift */; };
 		23EE397D2A8924540080E996 /* motion2operate-shared in Frameworks */ = {isa = PBXBuildFile; productRef = 23EE397C2A8924540080E996 /* motion2operate-shared */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		234E696D2A891CFA003D21BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		234E696F2A891CFA003D21BF /* motion2operate_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = motion2operate_mac.entitlements; sourceTree = "<group>"; };
 		23914E492A89BDC900CFF263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		23BC14C92A8F9A51001B6CDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23EE39782A8922FC0080E996 /* M2OViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M2OViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				234E696F2A891CFA003D21BF /* motion2operate_mac.entitlements */,
 				234E696C2A891CFA003D21BF /* Preview Content */,
 				23EE39782A8922FC0080E996 /* M2OViewModel.swift */,
+				23BC14C92A8F9A51001B6CDD /* AppDelegate.swift */,
 			);
 			path = "motion2operate-mac";
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				234E69692A891CF8003D21BF /* ContentView.swift in Sources */,
+				23BC14CA2A8F9A51001B6CDD /* AppDelegate.swift in Sources */,
 				234E69672A891CF8003D21BF /* motion2operate_macApp.swift in Sources */,
 				23EE39792A8922FC0080E996 /* M2OViewModel.swift in Sources */,
 			);

@@ -50,6 +50,8 @@ extension M2OViewModel: MulitipeerProtocol {
             SwiftAutoGUI.sendKeyShortcut([.control, .leftArrow])
         } else if message == "turn right" {
             SwiftAutoGUI.sendKeyShortcut([.control, .rightArrow])
+        } else if message == "click" {
+            SwiftAutoGUI.leftClick()
         }
     }
 

@@ -70,8 +70,10 @@ extension WatchDemoViewModel: WCSessionDelegate {
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         // send to mac app
         if let message = message["message"] as? String {
-            self.message = message
-            multiPeerClient.send(message: "turn left")
+            DispatchQueue.main.async {
+                self.message = message
+            }
+            multiPeerClient.send(message: "click")
         } else if let attitude = extractAttitude(from: message["attitude"] as! String) {
             DispatchQueue.main.async {
                 self.attitude = attitude
