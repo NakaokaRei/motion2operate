@@ -14,6 +14,10 @@ class M2OViewModel: ObservableObject {
     var multiPeerClient = MultipeerClient()
 
     @Published var message: String = ""
+    @Published var dx: Double?
+    @Published var dy: Double?
+
+    @Published var status: String = ""
 
     init() {
         multiPeerClient.delegate = self
@@ -43,16 +47,34 @@ class M2OViewModel: ObservableObject {
 extension M2OViewModel: MulitipeerProtocol {
 
     func recievedMessage(message: String) {
-        self.message = message
         if let (dx, dy) = extractDXDY(from: message) {
-            SwiftAutoGUI.moveMouse(dx: -dx, dy: -dy)
+            self.dx = dx
+            self.dy = dy
+            self.message = "マウスを移動"
+            if abs(dx) > abs(dy) {
+                SwiftAutoGUI.moveMouse(dx: -dx, dy: 0)
+            } else {
+                SwiftAutoGUI.moveMouse(dx: 0, dy: -dy)
+            }
         } else if message == "turn left" {
+            self.dx = nil
+            self.dy = nil
+            self.message = "左を向く"
             SwiftAutoGUI.sendKeyShortcut([.control, .leftArrow])
         } else if message == "turn right" {
+            self.dx = nil
+            self.dy = nil
+            self.message = "右を向く"
             SwiftAutoGUI.sendKeyShortcut([.control, .rightArrow])
         } else if message == "click" {
+            self.dx = nil
+            self.dy = nil
             SwiftAutoGUI.leftClick()
         }
+    }
+
+    func changeState(message: String) {
+        self.status = message
     }
 
 }

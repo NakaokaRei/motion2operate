@@ -14,17 +14,18 @@ struct RootView: View {
     var cmManager = CoreMotionManager()
 
     var body: some View {
-        TabView {
-            AirPodsProDemoView(multiPeerClient: multiPeerClient, cmManager: cmManager)
-                .tabItem {
-                    Image(systemName: "airpodspro")
-                    Text("AirPods Pro")
-                }
-            WatchDemoView(viewModel: .init(mutliPeerClient: multiPeerClient))
-                .tabItem {
-                    Image(systemName: "applewatch")
-                    Text("Watch")
-                }
-        }
+        AirPodsProDemoView(multiPeerClient: multiPeerClient, cmManager: cmManager)
+//        TabView {
+//            AirPodsProDemoView(multiPeerClient: multiPeerClient, cmManager: cmManager)
+//                .tabItem {
+//                    Image(systemName: "airpodspro")
+//                    Text("AirPods Pro")
+//                }
+//            WatchDemoView(viewModel: .init(mutliPeerClient: multiPeerClient))
+//                .tabItem {
+//                    Image(systemName: "applewatch")
+//                    Text("Watch")
+//                }
+//        }
     }
 }

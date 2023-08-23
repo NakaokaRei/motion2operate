@@ -14,11 +14,27 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
+            Text(viewModel.status)
+                .font(.title)
+                .padding()
+
             Text(viewModel.message)
+                .font(.title)
+                .padding()
+
+            if let dx = viewModel.dx, let dy = viewModel.dy {
+                Text("dx: \(dx)")
+                Text("dy: \(dy)")
+
+            }
         }
         .padding()
     }
 }
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView(viewModel: M2OViewModel())
+    }
+}
+

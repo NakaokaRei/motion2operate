@@ -10,6 +10,7 @@ import MultipeerConnectivity
 
 public protocol MulitipeerProtocol {
     func recievedMessage(message: String)
+    func changeState(message: String)
 }
 
 public class MultipeerClient: NSObject {
@@ -68,6 +69,7 @@ extension MultipeerClient: MCSessionDelegate {
         @unknown default:
             message = "\(peerID.displayName)が想定外の状態です"
         }
+        delegate?.changeState(message: message)
         print(message)
     }
 
