@@ -10,6 +10,10 @@ import SceneKit
 import motion2operate_shared
 import CoreMotion
 
+class StateWrapper {
+    var lastMesseageSentAt: Date?
+}
+
 struct SKHead3DView: UIViewRepresentable {
 
     @State private var cubeNode: SCNNode = .init()
@@ -17,6 +21,9 @@ struct SKHead3DView: UIViewRepresentable {
 
     var cmManger: CoreMotionManager
     var multiPeerClient: MultipeerClient
+
+    private let state = StateWrapper()
+    private let messageCooldown: TimeInterval = 1.0
 
     func makeUIView(context: Context) -> SCNView {
         let scnView = SCNView()
@@ -72,10 +79,16 @@ struct SKHead3DView: UIViewRepresentable {
     func computeShortcut(using motion: CMDeviceMotion) {
         let yawThreshold: Double = .pi / 6
 
+        if let lastSent = state.lastMesseageSentAt, Date().timeIntervalSince(lastSent) < messageCooldown {
+            return
+        }
+
         if motion.attitude.yaw > yawThreshold {
             multiPeerClient.send(message: "turn left")
+            state.lastMesseageSentAt = Date()
         } else if motion.attitude.yaw < -yawThreshold {
             multiPeerClient.send(message: "turn right")
+            state.lastMesseageSentAt = Date()
         }
     }
 
